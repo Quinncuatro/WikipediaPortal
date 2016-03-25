@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Viewer</title>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu:400,500'>
+    <link rel='stylesheet' type='text/css' href='css/font-awesome-4.5.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/animate/animate.css'>
+    <link rel="stylesheet" type='text/css' href="css/style.css">
+  </head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Wikipedia - Your Economy Class Window To The World</h1>
+    <br>
+    <div class="beginAll">
+      <div class="container text-center well">
+        <div class="col-md-6 bar-left">
+          <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="fa fa-random fa-5x img-center"></i><p>Random Article</p><a>
+        </div>
+        <div class="col-md-6 bar-right">
+          <span class="search">
+          <i class="fa fa-search fa-5x img-center"></i>
+          <p>Search</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script id="wikiHandlebars" type="text/x-handlebars-template">
+        <div id="eraseThis">
+          <br/>
+          {{#each query.search}}
+          <a href="http://wikipedia.org/wiki/{{title}}" class="specialA">
+          <div class="container text-left well-data">
+          <h3>{{{title}}}</h3>
+          <p>{{{snippet}}}...</p>
+          </div>
+          </a>
+          <br/> {{/each}}
+        </div>
+        </script>
+</body>
+
+    <script src='js/jquery/jquery-2.2.2.min.js'></script>
+    <script src='js/handlebars/handlebars-v4.0.5.js'></script>
+    <script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,70 @@
+body {
+  margin-top: 5%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 200%;
+  background-color: #222222;
+  color: #fff;
+  height: 100%;
+  margin-bottom: 35px;
+}
+
+.well {
+  background-color: #222222;
+  width: 40%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.well-data {
+  background-color: #222222;
+  width: 80%;
+  border: 1px solid #337AB7;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+}
+
+.well-data:hover {
+  background-color: #337AB7;
+    border-color: #fff;
+}
+
+a {
+  cursor: pointer;
+  color: #337AB7;
+}
+
+a:hover {
+  color: #005096;
+  text-decoration: none;
+}
+
+.specialA {
+  color: #fff;
+}
+
+.specialA:hover {
+  color: #fff;
+}
+
+.btn {
+  border-color: #337AB7;
+  background-color: #337AB7;
+}
+
+.btn:hover {
+  border-color: #005096;
+  background-color: #005096;;
+}
+
+.bar-left {
+  border-right: 5px solid #fff;
+}
+
+.whiteSearch {
+  color: #ffffff;
+}
+
+div.hide {
+  display: none;
+}
